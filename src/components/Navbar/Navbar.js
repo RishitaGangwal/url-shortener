@@ -30,11 +30,11 @@ export default function ButtonAppBar() {
     if (currentUser && currentUser.displayName) {
       return currentUser.displayName.split(" ")[0];
     }
-    // if (currentUser && currentUser.email) {
-    //   const emailName = currentUser.email.split("@")[0];
-    //   return emailName.replace(/\d/g, ""); // Remove digits
-    // }
-    // return "User";
+    if (currentUser && currentUser.email) {
+      const emailName = currentUser.email.split("@")[0];
+      return emailName.replace(/\d/g, ""); // Remove digits
+    }
+    return "User";
   };
 
   const darkTheme = createTheme({
