@@ -1,0 +1,204 @@
+/* General container styles */
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 90px;
+}
+
+.inputContainer h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+}
+
+.inputContainer h1 span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.inputContainer input {
+  width: 100%;
+  padding: 0.5rem 0.2rem 0.5rem 0.5rem; /* Adjusted padding for better visual alignment */
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 3px;
+  background-color: rgb(242, 233, 220);
+  margin-top: 15px;
+}
+
+.url-container {
+  line-height: 40px;
+  text-indent: 0.5rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #e7bfb3e9;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-family: serif;
+  margin-bottom: 10px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.result p {
+  color: rgb(222, 105, 152);
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.result button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.result button.copied {
+  background: rgb(233, 209, 166);
+  color: var(--primary-color);
+}
+
+.noData {
+  color: black;
+  font-size: 1rem;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .container {
+    margin-left: 20px;
+  }
+
+  .inputContainer h1 {
+    font-size: 2.5rem;
+  }
+
+  .inputContainer input {
+    padding: 0.5rem 0.2rem 0.5rem 0.5rem;
+    margin-top: 10px;
+  }
+
+  .url-container {
+    font-size: 0.9rem;
+  }
+
+  button {
+    margin-top: 15px;
+  }
+}
+
+/* Media query for phones and smaller devices */
+@media (max-width: 480px) {
+  .container {
+    height: auto;
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .inputContainer{
+  height: 27vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 17rem;
+}
+
+  .inputContainer h1 {
+    font-size: 2rem;
+    /* text-align: center; */
+    margin-right: 120px;
+
+  }
+
+  .inputContainer input {
+    width: 90%;
+    padding: 0.5rem 0.2rem;
+    margin-top: 10px;
+    margin-right: 12px;
+  }
+
+  .url-container {
+    font-size: 0.7rem;
+    /* margin-left: 21px; */
+    margin-right: 10px;
+  }
+
+  button {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 12px;
+  }
+
+  .result {
+    align-items: center;
+  }
+
+  .result p {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .result button {
+    width: 100%;
+  }
+}
+
+.container-shadow {
+  -webkit-box-shadow: 0px 8px 48px -15px rgba(36, 32, 36, 1);
+  -moz-box-shadow: 0px 8px 48px -15px rgba(36, 32, 36, 1);
+  box-shadow: 0px 8px 48px -15px rgba(36, 32, 36, 1);
+  padding-bottom: 12px;
+  border-radius: 16px;
+}
+
+/* AppBar styles
+.appBar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/* Typography styles for responsive design */
+/* .typography {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+
+}  */
+
+/* Adjustments for smaller screens */
+ /* @media screen and (max-device-width: 480px)  {
+  .typo {
+    font-size: 5rem;
+     max-width: 150px; 
+     padding-top: 18px;
+    padding-bottom: 33px;
+    
+    
+  } 
+ }  */
+
+
+
